@@ -13,7 +13,7 @@
                     <!-- Alignement à droite les éléments de navigation -->
                     <b-navbar-nav class="ml-auto">
 
-                        <b-nav-item v-on:click="gotocart" active>Shopping Cart</b-nav-item>
+                        <b-nav-item v-on:click="gotocart" active><i class="fas fa-shopping-cart"></i></b-nav-item>
 
                         <b-nav-item-dropdown right>
                             <!-- bouton contact -->
