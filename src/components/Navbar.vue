@@ -3,7 +3,7 @@
         <div>
             <b-navbar toggleable="lg" type="dark" variant="success">
                 <b-navbar-brand v-on:click="goHome" href="#">
-                    <b-icon-brightness-fill-high>Ecommerce</b-icon-brightness-fill-high>
+                    <i class="fas fa-home"></i>
                 </b-navbar-brand>
 
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

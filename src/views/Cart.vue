@@ -17,7 +17,7 @@
                     <b-table bordered hover :items="cart" :fields="fields">
 
                         <template v-slot:cell(#)="data">{{ data.index+1 }}</template>
-                        <template v-slot:cell(Prix)="data">{{ data.item.price * data.item.quantity }}</template>
+                        <template v-slot:cell(Prix)="data">{{ data.item.price * data.item.quantity }} €</template>
                         <template v-slot:cell(Supprimer)="data">
                             <b-button @click="remove(data.item.id)" variant="danger" class="mr-2">X</b-button>
                         </template>
@@ -51,7 +51,7 @@
             <b-row class="mt-4 text-center" v-if="cart.length > 0">
 
                 <b-col>
-                    <b-button v-on:click="clean" variant="info" block class="mr-2">Nettoyer</b-button>
+                    <b-button v-on:click="clean" variant="danger" block class="mr-2">Supprimer tout</b-button>
                 </b-col>
                 <b-col></b-col>
                 <b-col cols="4">Youtube Channel</b-col>
@@ -70,11 +70,11 @@
                 <ul v-for="productFinal in ticket.products" :key="productFinal.id">
                     <li>Nom du Produit : {{ productFinal.name }}</li>
                     <li>Quantité : {{ productFinal.quantity }}</li>
-                    <li>Prix : {{ productFinal.price }}</li>
-                    <li>Total : {{ productFinal.price * productFinal.quantity }}</li>
+                    <li>Prix : {{ productFinal.price }} €</li>
+                    <li>Total : {{ productFinal.price * productFinal.quantity }} €</li>
                     <hr>
                 </ul>
-                <h2 class="my-4 text-center">Total : {{ ticket.total}}</h2>
+                <h2 class="my-4 text-center">Total : {{ ticket.total}} €</h2>
             </b-modal>
 
         </b-container>

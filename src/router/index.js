@@ -1,3 +1,4 @@
+import Admin from '@/views/Admin';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
@@ -8,7 +9,8 @@ Vue.use(VueRouter)
 
 const routes = [
   {path: '/', name: 'Home', component: Home},
-  {path: '/cart', name: 'Cart', component: Cart}
+  {path: '/cart', name: 'Cart', component: Cart},
+  {path: '/admin', name: 'Admin', component: Admin}
 ]
 
 const router = new VueRouter({
