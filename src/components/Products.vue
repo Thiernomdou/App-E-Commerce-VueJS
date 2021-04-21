@@ -7,7 +7,7 @@
 
             <b-row>
 
-                <b-col cols="3" v-for="(product, index) in products" :key="index">
+                <b-col class="col-md-3" v-for="(product, index) in products" :key="index">
 
                     <b-card :title="product.name" :img-src="require(`@/assets/img/products/product${index+1}.jpg`)" 
                             img-alt="Image" img-top tag="article" class="mb-4">
