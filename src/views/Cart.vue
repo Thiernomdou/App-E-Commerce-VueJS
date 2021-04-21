@@ -54,7 +54,6 @@
                     <b-button v-on:click="clean" variant="danger" block class="mr-2">Supprimer tout</b-button>
                 </b-col>
                 <b-col></b-col>
-                <b-col cols="4">Youtube Channel</b-col>
                 <b-col></b-col>
                 <b-col>
                     <b-button v-on:click="buy" variant="success" block class="mr-2" >Acheter</b-button>

@@ -1,5 +1,7 @@
 <template>
-    <div>
+    <div class="container">
+
+        <h2 class="text-center mt-3">{{ product }}</h2>
 
         <b-container class="bv-example-row mt-4" fluid>
 
@@ -41,6 +43,7 @@
 export default {
     data() {
         return {
+            product: 'Liste des produits',
             products: [
                 {id:1,quantity: 1,name: 'Efferalgan',price: 10,img: '@/assets/products/product1.jpg', cart:false},
                 {id:2,quantity: 1,name: 'Doliprane',price: 5,img: '@/assets/products/product1.jpg', cart:false},

@@ -2,18 +2,20 @@
     <div>
         <div>
             <b-navbar toggleable="lg" type="dark" variant="success">
-                <b-navbar-brand v-on:click="goHome" href="#">
-                    <i class="fas fa-home"></i>
-                </b-navbar-brand>
+                <div class="container navigation">
+                    <b-navbar-nav>
+
+                        <b-nav-item @click="goHome" active><i class="fas fa-home"></i></b-nav-item>
+                    </b-navbar-nav>
 
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-                <b-collapse id="nav-collapse" is-nav>
+                <b-collapse id="nav-collapse" class="text-right" is-nav>
 
                     <!-- Alignement à droite les éléments de navigation -->
                     <b-navbar-nav class="ml-auto">
 
-                        <b-nav-item v-on:click="gotocart" active><i class="fas fa-shopping-cart"></i></b-nav-item>
+                        <b-nav-item @click="gotocart" active><i class="fas fa-shopping-cart"></i></b-nav-item>
 
                         <b-nav-item-dropdown right>
                             <!-- bouton contact -->
@@ -27,6 +29,7 @@
                     </b-navbar-nav>
 
                 </b-collapse>
+                </div>
             
             </b-navbar> 
 
@@ -94,5 +97,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.navigation {
+    font-size: 30px;
+}
 </style>
