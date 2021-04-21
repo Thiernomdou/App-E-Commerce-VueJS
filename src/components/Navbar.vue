@@ -99,6 +99,6 @@ export default {
 
 <style scoped>
 .navigation {
-    font-size: 30px;
+    font-size: 25px;
 }
 </style>
